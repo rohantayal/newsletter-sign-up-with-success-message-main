@@ -1,52 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  <!-- Sign-up form start -->
+  <main>
 
-  Stay updated!
+    <h1>Stay updated!</h1>
 
-  Join 60,000+ product managers receiving monthly updates on:
+    <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+    <ul>
+      <li>Product discovery and building what matters</li>
+      <li>Measuring to ensure updates are a success</li>
+      <li>And much more!</li>
+    </ul>
 
-  Email address
-  email@company.com
+    <form action="">
 
-  Subscribe to monthly newsletter
+      <label for="email_address">Email address</label>
+      <input type="email" name="email_address" id="email_address" placeholder="email@company.com">
 
-  <!-- Sign-up form end -->
+      <button id="submit">Subscribe to monthly newsletter</button>
 
-  <!-- Success message start -->
+    </form>
 
-  Thanks for subscribing!
+    <section id="hidden success">
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+      <h2>Thanks for subscribing!</h2>
 
-  Dismiss message
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
 
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <button id="dismis">Dismiss message</button>
+
+    </section>
+
+  </main>
 </body>
+
 </html>
