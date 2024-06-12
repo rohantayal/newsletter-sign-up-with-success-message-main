@@ -1,0 +1,115 @@
+:root{
+
+    /*Primary*/
+
+--pri-tomato: hsl(4, 100%, 67%);
+
+/*### Neutral */
+
+--neu-dark-slate-grey: hsl(234, 29%, 20%);
+--neu-charcoal-grey: hsl(235, 18%, 26%);
+--neu-grey: hsl(231, 7%, 60%);
+--neu-white: hsl(0, 0%, 100%);
+
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 375px;
+}
+
+section.form_card div.image-container{
+    width: 375px;
+    height: 284px;
+}
+
+section.form_card div img{
+    width: 375px;
+    height: 284px;
+}
+
+.form-description{
+    padding: 40px 24px;
+    min-height: 427px;
+}
+
+.form-description h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 100%;   
+    margin-bottom: 24px;
+}
+
+.form-description p{
+    margin-bottom: 24px;
+}
+
+.form-description ul{
+    margin-bottom: 40px;
+    padding-left: 24px;
+}
+
+.form-description ul li{
+    margin-bottom: 10px;
+    list-style: url(../assets/images/icon-list.svg);
+    padding-left: 16px;
+}
+
+.email{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#email_address{
+    padding: 16px 0 16px 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--neu-grey);
+    color: var(--neu-grey)
+}
+
+#submit{
+    padding: 16px 0 16px 24px;
+    margin-bottom: 24px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--neu-dark-slate-grey);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hidden{
+    max-height: 0;
+    overflow: hidden;
+}
+
+@media (max-width: 375px) {
+    main{
+        width: 100%;
+    }
+
+    section.form_card div.image-container{
+        width: 100%;
+    }
+
+    section.form_card div img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
