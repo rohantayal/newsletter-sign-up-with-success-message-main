@@ -93,9 +93,59 @@ section.form_card div img{
     font-weight: bold;
 }
 
-.hidden{
+section.hidden{
     max-height: 0;
     overflow: hidden;
+    margin: 0;
+}
+
+.success-card{
+    padding: 0 24px;
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 453px 1fr;
+}
+
+.success-card div{
+    grid-row: 1/2;
+    align-self: end;
+}
+
+.success-card img{
+    margin-bottom: 40px;
+}
+
+.success-card h2{
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+
+}
+
+.success-card p{
+    margin-bottom: 24px;
+}
+
+#dismis{
+    grid-row: 2/3;
+    padding: 16px 0 16px 24px;
+    margin-bottom: 24px;
+    width: 327px;
+    height: 56px;
+    border-radius: 8px;
+    background-color: var(--neu-dark-slate-grey);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: end;
+}
+
+#submit:hover, #dismis:hover{
+    background-color: var(--pri-tomato);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px 0px var(--pri-tomato);
 }
 
 @media (max-width: 375px) {
@@ -110,6 +160,87 @@ section.form_card div img{
     section.form_card div img{
         width: 100%;
         height: auto;
+    }
+    
+}
+
+@media (min-width: 375px){
+    body{
+        background-color: var(--neu-charcoal-grey);
+    }
+
+    section.form_card{
+        background-color: white;
+    }
+
+    .success-card{
+        background-color: white;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    body{
+        background-color: var(--neu-charcoal-grey);
+    }
+
+    main{
+        width: 100%;
+        display: grid;
+        place-content: center;
+    }
+
+    section.form_card{
+        display: grid;
+        grid-template-columns: 480px 448px;
+        grid-template-rows: minmax(1fr, 641px);
+        background-color: white;
+        width: 928px;
+        border-radius: 36px;
+    }
+
+    section.form_card div.image-container{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        content: url(../assets/images/illustration-sign-up-desktop.svg);
+        align-self: center;
+        justify-self: center;
+        padding: 24px;
+        width: 448px;
+        height: 641px;
+    }
+    section.form_card div img{
+        width: 400px;
+        height: 593px;
+        border-radius: 18px;
+    }
+
+    div.form-description{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 97px 48px 98px 64px; 
+        width: 488px;
+        height: 641px;
+    }
+
+    .success-card{
+        max-height: 520px;
+        max-width: 504px;
+        align-self: center;
+        justify-self: center;
+        border-radius: 36px;
+        grid-template-rows: 400px 120px;
+    }
+
+    .success-card div{
+        align-self: center;
+        justify-self: center;
+        padding: 48px 64px;
+    }
+
+    #dismis{
+        margin-bottom: 64px;
+        justify-self: center;
     }
     
 }
