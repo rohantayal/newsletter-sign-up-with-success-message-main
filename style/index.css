@@ -69,13 +69,13 @@ section.form_card div img{
 
 .email{
     font-weight: bold;
-    display: block;
     margin-bottom: 8px;
 }
 
 #email_address{
     padding: 16px 0 16px 24px;
     margin-bottom: 24px;
+    display: block;
     width: 100%;
     border-radius: 8px;
     border: 1px solid var(--neu-grey);
@@ -146,6 +146,27 @@ section.hidden{
     border: none;
     cursor: pointer;
     box-shadow: 0px 4px 12px 0px var(--pri-tomato);
+}
+
+#forError{
+    display: flex;
+    justify-content: space-between;
+}
+
+#error_message{
+    color: var(--pri-tomato);
+    max-height: 0;
+    overflow: hidden;
+}
+
+#email_address.error{
+    color: var(--pri-tomato);
+    border: 1px solid var(--pri-tomato);
+    background-color: hsla(4, 100%, 67%, 0.15);
+}
+
+#email_address.error::placeholder{
+    color: var(--pri-tomato);
 }
 
 @media (max-width: 375px) {
@@ -236,6 +257,7 @@ section.hidden{
         align-self: center;
         justify-self: center;
         padding: 48px 64px;
+    
     }
 
     #dismis{
