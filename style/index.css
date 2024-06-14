@@ -54,6 +54,7 @@ section.form_card div img{
 
 .form-description p{
     margin-bottom: 24px;
+    line-height: 24px;
 }
 
 .form-description ul{
@@ -263,6 +264,12 @@ section.hidden{
     #dismis{
         margin-bottom: 64px;
         justify-self: center;
+    }
+
+    .form-description h1{
+        font-weight: bold;
+        font-size: 58px;
+        margin-top: 0;
     }
     
 }
